@@ -31,7 +31,7 @@ const Sidebar = ({ sidebar, handleToggleSidebar }) => {
       onClick={() => handleToggleSidebar(false)}
     >
       <Link to="/">
-        <li>
+        <li className="link">
           <MdHome className="sidebar__icons" size={23} />
           <span className="sidebar__title">Home</span>
         </li>
@@ -42,14 +42,14 @@ const Sidebar = ({ sidebar, handleToggleSidebar }) => {
       </li>
       {/* LINL########## */}
       <Link to="/feed/subscriptions">
-        <li>
+        <li className="link">
           <MdSubscriptions className="sidebar__icons" size={23} />
           <span className="sidebar__title">Subscription</span>
         </li>
       </Link>
       <hr />
       <Link to="/library">
-        <li>
+        <li className="link">
           <MdLibraryBooks className="sidebar__icons" size={23} />
           <span className="sidebar__title">Library</span>
         </li>
