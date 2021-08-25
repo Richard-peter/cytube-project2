@@ -16,6 +16,19 @@
     display: none;
   }
 
+  .fa-typo3 {
+    padding: 0.6rem;
+    margin-left: 0.5rem;
+    font-size: 1.3rem;
+    /* background: #f70f0fc5;
+  border-left: 5rem soloid #f70f0fc5; */
+    background: #0381ffd7;
+    font-weight: bold;
+    border-left: 5rem soloid #0381ffd7;
+    border-radius: 50%;
+    width: fit-content;
+  }
+
   &__logo {
     width: 40px;
     height: 40px;
@@ -26,7 +39,7 @@
   &__name {
     display: flex;
     margin-right: 0;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 500;
     color: #e2e2e2;
     font-family: "Roboto Slab", serif;

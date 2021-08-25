@@ -30,11 +30,12 @@ const Sidebar = ({ sidebar, handleToggleSidebar }) => {
       className={sidebar ? "sidebar open" : "sidebar"}
       onClick={() => handleToggleSidebar(false)}
     >
-      <li>
-        <MdHome className="sidebar__icons" size={23} />
-        <span className="sidebar__title">Home</span>
-      </li>
-
+      <Link to="/">
+        <li>
+          <MdHome className="sidebar__icons" size={23} />
+          <span className="sidebar__title">Home</span>
+        </li>
+      </Link>
       <li>
         <WhatshotOutlinedIcon className="sidebar__icons" size={23} />
         <span className="sidebar__title">Trending</span>
@@ -47,18 +48,24 @@ const Sidebar = ({ sidebar, handleToggleSidebar }) => {
         </li>
       </Link>
       <hr />
-      <li>
-        <MdLibraryBooks className="sidebar__icons" size={23} />
-        <span className="sidebar__title">Library</span>
-      </li>
+      <Link to="/library">
+        <li>
+          <MdLibraryBooks className="sidebar__icons" size={23} />
+          <span className="sidebar__title">Library</span>
+        </li>
+      </Link>
+      {/* <Link to="/history"> */}
       <li>
         <MdHistory className="sidebar__icons" size={23} />
         <span className="sidebar__title">History</span>
       </li>
+      {/* </Link> */}
+
       <li>
         <VideoLibrarySharpIcon className="sidebar__icons" size={23} />
         <span className="sidebar__title">Your videos</span>
       </li>
+
       <li>
         <WatchLaterOutlinedIcon className="sidebar__icons" size={23} />
         <span className="sidebar__title">Watch later</span>
@@ -72,11 +79,14 @@ const Sidebar = ({ sidebar, handleToggleSidebar }) => {
         <MdSentimentDissatisfied className="sidebar__icons" size={23} />
         <span className="sidebar__title">I don't know</span>
       </li> */}
+
       <hr />
+      {/* <Link to="/log out"> */}
       <li onClick={logOutHandler}>
         <MdExitToApp className="sidebar__icons" size={23} />
         <span className="sidebar__title">Log Out</span>
       </li>
+      {/* </Link> */}
       <hr />
     </nav>
   );

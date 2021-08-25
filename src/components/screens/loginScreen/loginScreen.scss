@@ -16,6 +16,8 @@
 
     button {
       padding: 0.5rem;
+      margin-top: 15px;
+
       border: none;
       border-radius: 5px;
       margin-bottom: 1rem;
@@ -25,9 +27,22 @@
     }
   }
 
-  img {
-    width: 130px;
-    height: 130px;
-    object-fit: contain;
+  .fa-typo3 {
+    padding: 1.6rem;
+    margin-left: 0.5rem;
+    font-size: 3.3rem;
+    /* background: #f70f0fc5;
+  border-left: 5rem soloid #f70f0fc5; */
+    background: #0381ffd7;
+    // font-weight: bold;
+    border-left: 5rem soloid #0381ffd7;
+    border-radius: 50%;
+    width: fit-content;
   }
+
+  // img {
+  //   width: 130px;
+  //   height: 130px;
+  //   object-fit: contain;
+  // }
 }

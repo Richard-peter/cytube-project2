@@ -2,10 +2,12 @@ import React, { useEffect } from "react";
 import { Container } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
-// import { getVideosBySearch } from "../../redux/actions/videos.action";
 import VideoHorizontal from "../videoHorizontal/VideoHorizontal";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import { getVideosBySearch } from "../../redux/actions/videos.action";
+// import { TuneOutlined } from "@material-ui/icons";
+// import ChannelRow from "./channelScreen/ChannelRow";
+// import "./searchScreen.scss";
 
 const SearchScreen = () => {
   const { query } = useParams();

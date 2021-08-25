@@ -26,10 +26,11 @@ const LoginScreen = () => {
     <div className="login">
       <div className="login__container">
         <h1 className="login__name">cyTube</h1>
-        <img
+        <i className="fab fa-typo3"></i>
+        {/* <img
           src="http://iconsetc.com/icons-watermarks/simple-ios-blue-gradient/social-media/social-media_youtube/social-media_youtube_simple-ios-blue-gradient_512x512.png"
           alt=""
-        />
+        /> */}
 
         <button onClick={handleLogin}>Login with google</button>
         <p>Make sure to login with your google id</p>
